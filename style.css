@@ -1,0 +1,84 @@
+header {
+    text-align: center;
+    padding: 20px 0;
+    background-color: #333;
+    color: white;
+  }
+  
+  header h1 {
+    margin-bottom: 0;
+  }
+  
+  nav {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 10px;
+    padding: 10px 0;
+  }
+  
+  .btn {
+    padding: 8px 20px;
+    font-size: 14px;
+  }
+
+  #inputNumbers {
+    padding: 6px;
+  }
+  
+  #arrangeSelect {
+    padding: 6px;
+  }
+  
+  #algorithms {
+    padding: 10px 0;
+    margin-right: 387px;
+    margin-top: 15px;
+  }
+
+  #cells {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 5px;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+    border: 1px solid #ccc;
+    margin: 20px auto;
+    margin-top: 50px;
+  }
+  
+  .cell {
+    background-color: #007bff;
+    color: white;
+    padding: 8px 12px;
+    border-radius: 3px;
+    text-align: center;
+    transition: transform 0.3s ease-in-out;
+    height: 50px;
+    width: 50px;
+    font-size: 20px;
+  }
+
+  #arrangeSelect{
+    margin-top: 35px;
+}
+  
+  .swap-animation {
+    transform: translateX(100px); 
+  }
+  
+  #gengrid .btn {
+    width: 150px;
+  }
+
+  @media screen and (max-width: 576px) {
+    .cell {
+      width: 80px;
+      height: 80px; 
+    }
+  }
+
+  

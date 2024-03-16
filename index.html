@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title>Sort-O-Matic</title>
+        <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="./style.css">
+    </head>
+    <body>
+        <!--header-->
+        <header>
+            <h1 align="center">Sort-O-Matic</h1>
+            <nav>
+                <div class="row">
+                    <div class="col gap-2 d-sm-flex" id="erase">
+                        <button type="button" class="btn btn-outline-success btn-dark newArray" id="button1" onclick="clearCells()">Erase</button>
+                    </div>
+                    <div class="col" id="genRandomNumbers">
+                        <button type="button" class="btn btn-outline-success btn-dark genRandomNumbers" id="button2" onclick="generateRandomNumbers()">Generate</button>
+                    </div>
+                    <div class="col" id="input">
+                    <span id="input">
+                        <input type="text" id="inputNumbers" size="105">
+                    </div>
+                    <div class="col" id="gengrid">
+                        <button type="button" class="btn btn-outline-success btn-dark gengrid" id="button3" onclick="createCells()">Generate Cells </button>
+                    </div>
+                    <div class="col" id="reset">
+                        <button type="button" class="btn btn-outline-success btn-dark reset" id="button4" onclick="resetCells()">Reset</button>
+                    </div>
+                    <div class="col" id="arrange">
+                        <select id="arrangeSelect">
+                            <option value="ascending">Ascending</option>
+                            <option value="descending">Descending</option>
+                        </select>
+                    </div>
+                    <div class="col gap-2 d-sm-flex justify-content-end" id="algorithms">
+                        <button type="button" class="btn btn-outline-primary btn-dark bubbleSort" id="bubbleSort">Bubble Sort</button>
+                        <button type="button" class="btn btn-outline-primary btn-dark selectionSort" id="selectionSort">Selection Sort</button>
+                        <button type="button" class="btn btn-outline-primary btn-dark insertionSort" id="insertionSort">Insertion Sort</button>
+                        <button type="button" class="btn btn-outline-primary btn-dark mergeSort" id="mergeSort">Merge Sort</button>
+                        <button type="button" class="btn btn-outline-primary btn-dark quickSort" id="quickSort">Quick Sort</button>
+                        <button type="button" class="btn btn-outline-primary btn-dark heapSort" id="heapSort">Heap Sort</button>
+                        <button type="button" class="btn btn-outline-primary btn-dark radixSort" id="radixSort">Radix Sort</button>
+                        <button type="button" class="btn btn-outline-primary btn-dark shellSort" id="shellSort">Shell Sort</button>
+                    </div>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <!--Body-->
+        <body class="p-3 mb-2 bg-dark text-white">
+            <div id="cells" class="flex-container"></div>
+            <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js" integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0" crossorigin="anonymous"></script>
+            <script src="script.js"></script>
+        </body>
+</html>
