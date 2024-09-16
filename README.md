@@ -1,7 +1,7 @@
 # Sort-O-Matic 
 
 ## Introduction
-Sort-O-Matic v2.0 is a web tool for visualizing sorting algorithms. It helps users understand how different sorting methods work by showing step-by-step animations.
+Sort-O-Matic is a web tool for visualizing sorting algorithms. It helps users understand how different sorting methods work by showing step-by-step animations.
 
 ## Features
 1. **Input Field:** Enter numbers separated by spaces or commas.
